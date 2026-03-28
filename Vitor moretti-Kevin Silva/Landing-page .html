@@ -5,49 +5,75 @@
     <head>
         <title>
              AUTO-PEÇAS RONILDÃO
-            
         </title>
+
+        <style>
+            div
+            img {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                
+                }
+        </style>
+        
         
     </head>    
     
     <body> 
 
-         <!-- Titulo-->
+    <!-- Titulo-->
     <h1> <strong> Auto-peças ronildão</strong></h1>
-    <h2> Criado por: Vitor Moretti  </h2>
+    <h4> Criado por: Vitor Moretti  </h4>
     <img src="logo-ronildao.png" alt="big-ronald" width="250" height="200">
-
+        
     <!-- Barra de pesquisa-->
-    <td> <form action="logo-ronildao.png">
-        Cique para pesquisar: <input type="text" name="ronald">
-    <button type="submit">enviar</button>
-    <button type="reset">resetar</button>
-   </form> </td>    
+  <form onsubmit="redirecionar(event)">
+    <input type="text" id="busca" placeholder="Digite algo..." required>
+    <button type="submit">Buscar</button>
+    <button type="reset"> apagar</button>
+  </form>
+
+  <script>
+    function redirecionar(event) {
+      event.preventDefault(); 
+      
+      const valor = document.getElementById("busca").value.toLowerCase();
+
+      if (valor === "uno") {
+        window.location.href = "https://sp.olx.com.br/sao-paulo-e-regiao/autos-e-pecas/carros-vans-e-utilitarios/fiat-uno-mille-1-0-fire-f-flex-economy-2p-2011-1468630853?rec=h&lis=homefeed%7CNA%7Ccollab_filtering_2020%7C0";
+      } else if (valor === "palio") {
+        window.location.href = "https://sp.olx.com.br/sao-paulo-e-regiao/autos-e-pecas/carros-vans-e-utilitarios/fiat-palio-ed-1-0-mpi-2p-e-4p-1998-1489560521?lis=listing_2020";
+      } else if (valor === "opala") {
+        window.location.href = "https://sp.olx.com.br/vale-do-paraiba-e-litoral-norte/autos-e-pecas/carros-vans-e-utilitarios/chevrolet-opala-l-sl-ss-2-5-4-1-1983-1489551634?lis=listing_no_category";
+      } else {
+        alert("Nenhum resultado encontrado!");
+      }
+    }
+  </script>
 
  <!--opções-->
-        <h1> Veja fiat uno</h1>
 
-              <a href=" https://sp.olx.com.br/sao-paulo-e-regiao/autos-e-pecas/carros-vans-e-utilitarios/fiat-uno-mille-1-0-fire-f-flex-economy-2p-2011-1468630853?lis=listing_2020 ">
-              <button> <header>Fiat Uno 2011</header> <img src="https://portalhortolandia.com.br/wp-content/uploads/2024/12/uno.jpg" alt="picfiat" width="300" height="250"></button>
-              </a>
+<h1> <strong> Veja mais opções</strong></h1>
+
+<div>
+
+<a href="https://sp.olx.com.br/sao-paulo-e-regiao/autos-e-pecas/carros-vans-e-utilitarios/fiat-uno-mille-1-0-i-e-electronic-brio-1991-1489498444?rec=h&lis=homefeed%7CNA%7Cuser_last_seen_rec%7C0">
+<button> <header> uno</header>
+    <img src="https://img.olx.com.br/images/62/627649865183656.webp" alt="picuno" width="400" height="300">
+</button> </a>
+
+ <a href="https://sp.olx.com.br/grande-campinas/autos-e-pecas/carros-vans-e-utilitarios/chevrolet-opala-diplomata-diplom-sle-4-1-2-5-1990-1489282380?rec=h&lis=homefeed%7CNA%7Cuser_last_seen_rec%7C0">
+<button> <header> opala</header>
+     <img src="https://img.olx.com.br/images/46/467652508266420.webp" alt="picopala" width="400" height="300">
+</button> </a>
+
+<a href="https://sp.olx.com.br/sao-paulo-e-regiao/autos-e-pecas/carros-vans-e-utilitarios/fiat-palio-ed-1-0-mpi-2p-e-4p-1998-1489560521?rec=h&lis=homefeed%7CNA%7Cuser_last_seen_rec%7C0">
+<button> <header> palios</header>
+    <img src="https://img.olx.com.br/images/60/601621864252882.webp" alt="picpalio" width="400" height="300">
+</button> </a>
+
+</div>
 
 
-           <h1> Ou de opalas </h1>
-
-               <a href=" https://rj.olx.com.br/rio-de-janeiro-e-regiao/autos-e-pecas/carros-vans-e-utilitarios/chevrolet-opala-l-sl-ss-2-5-4-1-1980-1486291048?lis=listing_2020 ">
-               <button> <header>Opala preto</header> <img src="https://img.olx.com.br/images/52/528628507378211.jpg" alt="picfiat" width="300" height="250"></button>
-               </a>
- 
-  
-   
-        <h1> Ou de palios </h1>
-
-            <a href=" https://mg.olx.com.br/regiao-de-uberlandia-e-uberaba/autos-e-pecas/carros-vans-e-utilitarios/fiat-palio-ex-1-0-mpi-fire-8v-4p-2001-1486298621?lis=listing_2020 ">
-            <button> <header>palio guerreiro </header> <img src="https://img.olx.com.br/images/50/509606262012035.jpg" alt="picfiat" width="300" height="250"></button>
-            </a>
-   
-
-    
-   
-
-    </body>
+</body>
