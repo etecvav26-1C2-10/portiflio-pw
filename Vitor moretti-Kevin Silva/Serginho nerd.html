@@ -3,28 +3,84 @@
 <head>
 <title>Serginho perifericos</title>
 </head>
-<body style="background-color: lightblue;">
-
+<body style="background-color: rgb(147, 180, 190);">
+<header>
+<!--Titulo-->
 <h1>Serginho perifericos</h1>
+
+<!--Logo-->
 <img src="serginho.png" alt="Socrates" width="200" height="200">
 
-<h1 style="color: darkred;"><strong>Novos produtos em destaque</strong></h1>
+<!--pesquisa dos produtos-->
 
+<style>
+button {
+  padding: 20px 20px; /* aumenta o espaço interno */
+  font-size: 10px;    /* aumenta o tamanho do texto */
+  border-radius: 4px; /* deixa mais arredondado */
+}
+</style>
+<style>
+ #busca {
+  width: 250px;     /* largura da barra */
+  height: 30px;     /* altura */
+  font-size: 16px;  /* tamanho do texto */
+  padding: 5px;     /* espaço interno */
+}
+</style>
+
+<form onsubmit="redirecionar(event)">
+  <input type="text" id="busca" placeholder="Digite algo..." required>
+  <button type="submit">Buscar</button>
+  <button type="reset">Apagar</button>
+</form>
+
+  <script>
+    function redirecionar(event) {
+      event.preventDefault(); 
+      
+      const valor = document.getElementById("busca").value.toLowerCase();
+
+      if (valor === "mechanic k500") {
+        window.location.href = "https://www.amazon.com.br/Machenike-K500-B61-Mec%C3%A2nico-Remov%C3%ADveis-Retroilumina%C3%A7%C3%A3o/dp/B0CCGNS86V";
+      } else if (valor === "attack shark") {
+        window.location.href = "https://www.kabum.com.br/produto/688540/mouse-gamer-attack-shark-x11-branco-22000dpi-rgb-tri-mode";
+      } else if (valor === "controle ps5") {
+        window.location.href = "https://www.kabum.com.br/produto/115801/controle-sony-dualsense-ps5-sem-fio-branco-3005767";
+      } else {
+        alert("Nenhum resultado encontrado!");
+      }
+    }
+  </script>
+</header>
+
+<main>
+<!--Produtos em destaque-->
+<h1 style="color: darkred;"><strong>Novos produtos em destaque</strong></h1>
+<!--Produtos-->
 <div>
+<h3>mechanic k500</h3>
 <a href="https://www.amazon.com.br/Machenike-K500-B61-Mec%C3%A2nico-Remov%C3%ADveis-Retroilumina%C3%A7%C3%A3o/dp/B0CCGNS86V">
 <img src="https://m.media-amazon.com/images/I/61tZYCa32KL.jpg" alt="mechanic k500" width="200" height="200">
 </a>
 </div>
 <div>
+<h3>attack shark</h3>
 <a href="https://www.kabum.com.br/produto/688540/mouse-gamer-attack-shark-x11-branco-22000dpi-rgb-tri-mode">
-    <img src="https://images.kabum.com.br/produtos/fotos/sync_mirakl/688540/Mouse-Gamer-Attack-Shark-X11-Branco-22000dpi-RGB-Tri-mode_1734022610_gg.jpg" alt="mechanic k500" width="200" height="200">
+    <img src="https://images.kabum.com.br/produtos/fotos/sync_mirakl/688540/Mouse-Gamer-Attack-Shark-X11-Branco-22000dpi-RGB-Tri-mode_1734022610_gg.jpg" alt="attack shark" width="200" height="200">
     </a>
 </div>
 <div>
+    <h3>controle ps5</h3>
     <a href="https://www.kabum.com.br/produto/115801/controle-sony-dualsense-ps5-sem-fio-branco-3005767">
-        <img src="https://images.kabum.com.br/produtos/fotos/115801/controle-sem-fio-ps5-dualsense_1598897393_g.jpg" alt="mechanic k500" width="200" height="200">
+        <img src="https://images.kabum.com.br/produtos/fotos/115801/controle-sem-fio-ps5-dualsense_1598897393_g.jpg" alt="controle ps5" width="200" height="200">
         </a>
 </div>
+</main>
+<footer>
+    <p>&copy; Kevin Silva Fernandes, 2026</p>
+
+</footer>
 
 </body>
 </html>
