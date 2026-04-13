@@ -1,4 +1,4 @@
-#portiflio-pw
+## portiflio-pw
 ---
 <h1>Bem-vindos ao portifolio-pw</h1>
 <p>Este portfólio reúne atividades desenvolvidas na disciplina de Programação Web (PW), incluindo projetos em HTML, CSS, arquivos em Markdown (.md) e trabalhos realizados em grupo.
