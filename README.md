@@ -8,5 +8,11 @@ Ao longo das atividades, exploramos a criação e estruturação de páginas web
 Os trabalhos em grupo também tiveram um papel importante, contribuindo para o desenvolvimento da comunicação, colaboração e divisão de tarefas, além da troca de ideias durante a construção das atividades.
 
 Este portfólio representa nossa evolução no desenvolvimento web, unindo prática, criatividade e trabalho em equipe ao longo do processo de aprendizagem.</p>
+
 ---
-<h2>Linguagens sendo utilizadas atualmente:</h2>
+## Linguagens sendo utilizadas atualmente:
+<p>
+ <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="40"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="40"/>
+</p>
+
