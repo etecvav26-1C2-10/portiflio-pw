@@ -12,7 +12,7 @@ Este portfólio representa nossa evolução no desenvolvimento web, unindo prát
 ---
 ## Linguagens sendo utilizadas atualmente:
 <p>
- <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="40"/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="40"/>
+<img src="https://img.shields.io/badge/HTML5-orange?logo=html5&logoColor=white" width="40">
+<img src="https://img.shields.io/badge/CSS3-blue?logo=css3&logoColor=white" width="40">
 </p>
 
