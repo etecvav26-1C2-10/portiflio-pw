@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Site da Laufey">
+    <title>Megan para os intimos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <!--titulo-->
+        <h1>Laufey</h1>
+
+          <!--imagem da artista-->
+        <img src="laufey.jpg">
+
+          <!--Barra de pesquisa-->
+          <form class="pesquisa" onsubmit="buscarMusica(event)">
+        <input 
+            type="text" 
+            id="musica" 
+            placeholder="Digite qualquer música da Laufey..."
+        >
+        <button type="submit">Buscar</button>
+    </form>
+
+    <script>
+        function buscarMusica(event) {
+            event.preventDefault();
+
+            let musica = document.getElementById("musica").value.trim();
+
+            if (musica !== "") {
+                let pesquisa = encodeURIComponent("Laufey " + musica);
+                let link = "https://www.youtube.com/results?search_query=" + pesquisa;
+
+                window.location.href = link;
+            } else {
+                alert("Digite o nome de uma música!");
+            }
+        }
+    </script>
+    </header>
+    <main>
+          <!--Redes sociais da artista-->
+
+    <table align="center">
+    <tr>
+    <td align="center">
+    <a href="https://www.instagram.com/laufey/">Instagram</a>
+    </td>
+    <td align="center">
+    <a href="https://open.spotify.com/intl-pt/artist/7gW0r5CkdEUMm42w9XpyZO">Spotify</a>
+    </td>
+    </tr>
+    </table>
+
+      <!--Informações adicionais sobre ela-->
+
+    <ul>
+    <li>Laufey é uma cantora, compositora e multi-instrumentista conhecida por misturar jazz tradicional com pop moderno.</li>
+    <li>Ela nasceu em 23 de abril de 1999, na Iceland, e possui ascendência islandesa e chinesa, o que também influencia sua identidade artística.</li>
+    <li>Entre seus trabalhos mais conhecidos estão o álbum Bewitched e a música From The Start, que ajudaram a aumentar sua popularidade mundial.</li>
+    </ul>
+
+    </main>
+</body>
+</html>
