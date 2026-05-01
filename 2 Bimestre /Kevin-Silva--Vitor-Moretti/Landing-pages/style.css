@@ -1,0 +1,106 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: brown;
+    color: bisque;
+    text-align: center;
+}
+header {
+    position: relative; /* Necessário para ancorar a barra */
+    padding-bottom: 20px;
+}
+h1 {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+img {
+    height: 250px; /*altera altura*/
+    width: 250px; /*altera largura*/
+    border-radius: 250px; /*Muda a circuferencia da borda*/
+    border: solid 2px white; /*altera a borda (tipo de borda, tamanho cor)*/
+    margin: 10px; /*É o espaço fora da borda, usado para afastar um elemento dos outros.*/
+    padding: 10px; /*É o espaço entre o conteúdo e a borda do elemento*/
+}
+table{
+    margin-left: auto; /*espaço a esquerda*/
+    margin-right: auto; /*espaço a direita*/
+    border: 1px solid white; /*altera a borda (tipo de borda, tamanho cor)*/
+}
+td {
+    border: 1px solid white; /*altera a borda (tipo de borda, tamanho cor)*/
+}
+a {
+    display: block; /*Faz com que um elemento se comporte como um bloco*/
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    font-size: 20px;
+    background-color: antiquewhite; /*muda a cor do fundo do elemento*/
+    color: brown; /*muda a cor do texto dentro do elemento*/
+    border-radius: 10px;
+    width: 400px; /*aumenta a largura*/
+}
+ul {
+    color: white;
+    list-style: disc; /*cria uma lista*/
+    width: 20px auto;
+    margin: 20px auto;
+    text-align: center;
+    font-size: 20px;
+}
+ form {
+    margin-top: auto;
+    padding-right: auto;
+ }
+    .pesquisa {
+            display: flex;
+            gap: 10px;
+            color: white;
+        }
+
+        input {
+            width: 350px;
+            padding: 12px;
+            border: 2px solid white;
+            color: white;
+            border-radius: 10px;
+            font-size: 16px;
+            background-color: brown;
+        }
+
+        input::placeholder {
+    color: white;
+    }
+
+        button {
+            padding: 12px 20px;
+            border: none;
+            border-radius: 10px;
+            background-color: brown;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            border: 2px solid white;
+        }
+
+        button:hover {
+            background-color: white;
+        }
+        .pesquisa {
+    position: absolute; /* Remove do fluxo normal e permite mover livremente */
+    top: 20px;          /* Distância do topo */
+    right: 20px;        /* Distância da direita */
+    display: flex;
+    gap: 10px;
+}
+@media (max-width: 768px) {
+    .pesquisa {
+        position: static; /* Volta para o comportamento normal */
+        justify-content: center;
+        margin-top: 20px;
+    }
+}
