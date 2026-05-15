@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VTKF | Análise de Dados</title>
+
+    <link rel="icon" type="image/x-icon" href="../img/VTKF.png">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>VTKF | Etec Vasco Antônio Vanchiarutti</h1>
+
+        <ul>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="profissao.html">Profissão</a></li>
+            <li><a href="carreira.html">Carreira</a></li>
+            <li><a href="curso.html">Curso</a></li>
+        </ul>
+
+        <form onsubmit="redirecionamento(event)">
+            <input type="text" id="busca" placeholder="Oque você quer procurar? ">
+        </form>
+    </header>
+
+    <main>
+
+        <section class="intro">
+            <h2>O que é Análise de Dados?</h2>
+
+            <p>
+                A Análise de Dados é uma área da tecnologia voltada para a coleta,
+                organização, interpretação e transformação de dados em informações úteis.
+                O principal objetivo é ajudar empresas e organizações a tomarem decisões
+                mais inteligentes e estratégicas.
+            </p>
+
+            <p>
+                Atualmente, praticamente todas as empresas utilizam dados em suas operações.
+                Redes sociais, bancos, hospitais, lojas, aplicativos e até escolas geram
+                milhares de informações diariamente. O profissional de análise de dados é
+                responsável por estudar esses dados e identificar padrões, tendências e
+                oportunidades.
+            </p>
+        </section>
+
+        <section class="profissao">
+            <h2>Como funciona a profissão?</h2>
+
+            <p>
+                O analista de dados trabalha diretamente com informações coletadas por
+                sistemas, pesquisas, vendas, clientes e plataformas digitais. Seu trabalho
+                consiste em limpar os dados, organizar tabelas, criar gráficos e interpretar
+                resultados para auxiliar gestores e empresas.
+            </p>
+
+            <p>
+                Esse profissional utiliza ferramentas como:
+            </p>
+
+            <ul>
+                <li>Microsoft Excel</li>
+                <li>Power BI</li>
+                <li>Tableau</li>
+                <li>SQL</li>
+                <li>Python</li>
+                <li>Google Data Studio</li>
+            </ul>
+
+            <p>
+                Além das ferramentas técnicas, o analista precisa ter raciocínio lógico,
+                capacidade de interpretação e pensamento crítico para encontrar soluções
+                através dos dados.
+            </p>
+        </section>
+
+        <section class="areas">
+            <h2>Áreas de atuação</h2>
+
+            <p>
+                A profissão de análise de dados está presente em diversos setores da economia.
+                Algumas áreas que mais contratam profissionais são:
+            </p>
+
+            <ul>
+                <li>Empresas de tecnologia</li>
+                <li>Bancos e instituições financeiras</li>
+                <li>Hospitais e clínicas</li>
+                <li>Marketing digital</li>
+                <li>Comércio e varejo</li>
+                <li>Indústrias</li>
+                <li>Educação</li>
+                <li>Logística e transporte</li>
+            </ul>
+
+            <p>
+                Em muitos casos, o analista ajuda empresas a reduzirem custos,
+                aumentarem vendas e melhorarem a experiência dos clientes.
+            </p>
+        </section>
+
+        <section class="mercado">
+            <h2>Mercado de trabalho</h2>
+
+            <p>
+                O mercado de trabalho para análise de dados está crescendo rapidamente.
+                Com o aumento da digitalização das empresas, a necessidade de profissionais
+                especializados em dados se tornou muito alta.
+            </p>
+
+            <p>
+                Muitas empresas procuram analistas capazes de transformar grandes quantidades
+                de informações em relatórios simples e úteis. Isso faz com que a área tenha
+                ótimas oportunidades de emprego e salários atrativos.
+            </p>
+
+            <p>
+                Além disso, existem possibilidades de crescimento profissional para cargos como:
+            </p>
+
+            <ul>
+                <li>Cientista de Dados</li>
+                <li>Engenheiro de Dados</li>
+                <li>Analista de Business Intelligence (BI)</li>
+                <li>Especialista em Inteligência Artificial</li>
+                <li>Gestor de Dados</li>
+            </ul>
+        </section>
+
+        <section class="habilidades">
+            <h2>Habilidades importantes</h2>
+
+            <p>
+                Para se destacar na profissão, é importante desenvolver algumas habilidades:
+            </p>
+
+            <ul>
+                <li>Raciocínio lógico</li>
+                <li>Organização</li>
+                <li>Interpretação de informações</li>
+                <li>Conhecimento em matemática básica e estatística</li>
+                <li>Comunicação</li>
+                <li>Conhecimento em programação</li>
+            </ul>
+
+            <p>
+                A comunicação é essencial, pois o profissional precisa explicar resultados
+                técnicos de forma simples para outras pessoas da empresa.
+            </p>
+        </section>
+
+        <section class="conclusao">
+            <h2>Conclusão</h2>
+
+            <p>
+                A profissão de análise de dados é uma das áreas mais importantes da tecnologia
+                atualmente. Empresas dependem cada vez mais de informações precisas para tomar
+                decisões e melhorar seus resultados.
+            </p>
+
+            <p>
+                Para quem gosta de tecnologia, lógica, organização e resolução de problemas,
+                essa pode ser uma excelente carreira. Além das oportunidades de emprego,
+                a área oferece crescimento constante e contato com tecnologias modernas.
+            </p>
+        </section>
+
+    </main>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+
+            const itens = document.querySelectorAll(".Nome p");
+            const paginas = {};
+
+            itens.forEach(item => {
+                const nome = item.textContent.toLowerCase().split(" ")[0];
+                const link = item.closest(".Desc")
+                    .querySelector("a")
+                    .getAttribute("href");
+
+                paginas[nome] = link;
+            });
+
+            window.redirecionamento = function(event) {
+                event.preventDefault();
+
+                const valor = document
+                    .getElementById("busca")
+                    .value
+                    .toLowerCase()
+                    .trim();
+
+                if (paginas[valor]) {
+                    window.location.href = paginas[valor];
+                } else {
+                    alert("O que você digitou não foi encontrado!");
+                }
+            };
+
+        });
+    </script>
+    <footer>
+        <p>VTKF copyright 2026</p>
+    </footer>
+
+</body>
+</html>

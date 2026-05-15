@@ -1,0 +1,254 @@
+/* =========================
+   RESET
+========================= */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* =========================
+   BODY
+========================= */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f3f5f9;
+    color: #333;
+    line-height: 1.7;
+}
+
+/* =========================
+   HEADER
+========================= */
+header{
+    background: linear-gradient(135deg, #0f172a, #1e3a8a);
+    color: white;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+header h1{
+    font-size: 2rem;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+/* =========================
+   MENU
+========================= */
+header ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 25px;
+    flex-wrap: wrap;
+}
+
+header ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 18px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+header ul li a:hover{
+    background: white;
+    color: #1e3a8a;
+}
+
+/* =========================
+   FORMULÁRIO
+========================= */
+form{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+form input{
+    width: 260px;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    font-size: 1rem;
+}
+
+form button{
+    padding: 12px 15px;
+    border: none;
+    border-radius: 10px;
+    background: white;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 1rem;
+}
+
+form button:hover{
+    background: #dbeafe;
+    transform: scale(1.05);
+}
+
+/* =========================
+   MAIN
+========================= */
+main{
+    width: 90%;
+    max-width: 1100px;
+    margin: 40px auto;
+}
+
+/* =========================
+   SECTIONS
+========================= */
+section{
+    background: white;
+    margin-bottom: 30px;
+    padding: 30px;
+    border-radius: 18px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+section:hover{
+    transform: translateY(-5px);
+}
+
+section h2{
+    color: #1e3a8a;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    border-left: 6px solid #2563eb;
+    padding-left: 15px;
+}
+
+section p{
+    margin-bottom: 18px;
+    text-align: justify;
+    font-size: 1.05rem;
+}
+
+/* =========================
+   LISTAS
+========================= */
+section ul{
+    margin: 20px 0;
+    padding-left: 30px;
+}
+
+section ul li{
+    margin-bottom: 10px;
+    font-size: 1.05rem;
+}
+
+/* =========================
+   INTRO ESPECIAL
+========================= */
+.intro{
+    background: linear-gradient(135deg, #eff6ff, #dbeafe);
+}
+
+.intro h2{
+    color: #1d4ed8;
+}
+
+/* =========================
+   PROFISSÃO
+========================= */
+.profissao{
+    border-top: 5px solid #2563eb;
+}
+
+/* =========================
+   ÁREAS
+========================= */
+.areas{
+    border-top: 5px solid #16a34a;
+}
+
+.areas h2{
+    color: #15803d;
+}
+
+/* =========================
+   MERCADO
+========================= */
+.mercado{
+    border-top: 5px solid #ea580c;
+}
+
+.mercado h2{
+    color: #c2410c;
+}
+
+/* =========================
+   HABILIDADES
+========================= */
+.habilidades{
+    border-top: 5px solid #9333ea;
+}
+
+.habilidades h2{
+    color: #7e22ce;
+}
+
+/* =========================
+   CONCLUSÃO
+========================= */
+.conclusao{
+    background: linear-gradient(135deg, #e0f2fe, #f0f9ff);
+}
+
+/* =========================
+   FOOTER
+========================= */
+footer{
+    background: #0f172a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 1rem;
+}
+
+/* =========================
+   RESPONSIVIDADE
+========================= */
+@media(max-width: 768px){
+
+    header h1{
+        font-size: 1.5rem;
+    }
+
+    header ul{
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    form{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    form input{
+        width: 90%;
+    }
+
+    section{
+        padding: 20px;
+    }
+
+    section h2{
+        font-size: 1.5rem;
+    }
+
+    section p,
+    section ul li{
+        font-size: 1rem;
+    }
+}
