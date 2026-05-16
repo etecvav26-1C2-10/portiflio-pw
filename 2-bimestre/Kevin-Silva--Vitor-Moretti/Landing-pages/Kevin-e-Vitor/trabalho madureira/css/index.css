@@ -12,8 +12,8 @@
 ========================= */
 body{
     font-family: Arial, Helvetica, sans-serif;
-    background: #f3f5f9;
-    color: #333;
+    background: linear-gradient(-135deg, #2b0000, #7a0000);
+    color: #1a0000;
     line-height: 1.7;
 }
 
@@ -21,11 +21,13 @@ body{
    HEADER
 ========================= */
 header{
-    background: linear-gradient(135deg, #0f172a, #1e3a8a);
+    background: linear-gradient(135deg, #3a0000, #a30000);
     color: white;
     padding: 25px;
     text-align: center;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+
+    border-bottom: 4px solid #5c0000;
 }
 
 header h1{
@@ -48,7 +50,7 @@ header ul{
 
 header ul li a{
     text-decoration: none;
-    color: white;
+    color: #ffffff;
     font-weight: bold;
     padding: 10px 18px;
     border-radius: 10px;
@@ -56,9 +58,9 @@ header ul li a{
 }
 
 header ul li a:hover{
-    background: white;
-    color: #1e3a8a;
-}
+    background: #8b0000;
+    color: #ffffff;
+}   
 
 /* =========================
    FORMULÁRIO
@@ -83,14 +85,15 @@ form button{
     padding: 12px 15px;
     border: none;
     border-radius: 10px;
-    background: white;
+    background: #a30000;
+    color: white;
     cursor: pointer;
     transition: 0.3s;
     font-size: 1rem;
 }
 
 form button:hover{
-    background: #dbeafe;
+    background: #c40000;
     transform: scale(1.05);
 }
 
@@ -107,11 +110,11 @@ main{
    SECTIONS
 ========================= */
 section{
-    background: white;
+    background: #fff5f5;
     margin-bottom: 30px;
     padding: 30px;
     border-radius: 18px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     transition: 0.3s;
 }
 
@@ -120,10 +123,10 @@ section:hover{
 }
 
 section h2{
-    color: #1e3a8a;
+    color: #8b0000;
     margin-bottom: 20px;
     font-size: 2rem;
-    border-left: 6px solid #2563eb;
+    border-left: 6px solid #c40000;
     padding-left: 15px;
 }
 
@@ -150,65 +153,65 @@ section ul li{
    INTRO ESPECIAL
 ========================= */
 .intro{
-    background: linear-gradient(135deg, #eff6ff, #dbeafe);
+    background: linear-gradient(135deg, #ffe5e5, #ffd6d6);
 }
 
 .intro h2{
-    color: #1d4ed8;
+    color: #b30000;
 }
 
 /* =========================
    PROFISSÃO
 ========================= */
 .profissao{
-    border-top: 5px solid #2563eb;
+    border-top: 5px solid #b30000;
 }
 
 /* =========================
    ÁREAS
 ========================= */
 .areas{
-    border-top: 5px solid #16a34a;
+    border-top: 5px solid #cc0000;
 }
 
 .areas h2{
-    color: #15803d;
+    color: #990000;
 }
 
 /* =========================
    MERCADO
 ========================= */
 .mercado{
-    border-top: 5px solid #ea580c;
+    border-top: 5px solid #e60000;
 }
 
 .mercado h2{
-    color: #c2410c;
+    color: #b30000;
 }
 
 /* =========================
    HABILIDADES
 ========================= */
 .habilidades{
-    border-top: 5px solid #9333ea;
+    border-top: 5px solid #800000;
 }
 
 .habilidades h2{
-    color: #7e22ce;
+    color: #660000;
 }
 
 /* =========================
    CONCLUSÃO
 ========================= */
 .conclusao{
-    background: linear-gradient(135deg, #e0f2fe, #f0f9ff);
+    background: linear-gradient(135deg, #ffeaea, #fff5f5);
 }
 
 /* =========================
    FOOTER
 ========================= */
 footer{
-    background: #0f172a;
+    background: #2b0000;
     color: white;
     text-align: center;
     padding: 20px;
