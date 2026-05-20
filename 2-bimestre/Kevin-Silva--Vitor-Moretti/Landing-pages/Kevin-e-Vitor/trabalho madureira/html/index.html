@@ -22,8 +22,35 @@
         </ul>
 
         <form onsubmit="redirecionamento(event)">
-            <input type="text" id="busca" placeholder="Oque você quer procurar? ">
+            <input type="text" id="busca" placeholder="Digite o primeiro nome...">
         </form>
+
+    <script>
+function redirecionamento(event) {
+    event.preventDefault();
+
+    const valor = document
+        .getElementById("busca")
+        .value
+        .toLowerCase()
+        .trim();
+
+    const paginas = {
+        "sobre": "sobre.html",
+        "profissao": "profissao.html",
+        "carreira": "carreira.html",
+        "curso": "curso.html"
+    };
+
+    if (paginas[valor]) {
+        window.location.href = paginas[valor];
+    } else {
+        alert("Página não encontrada!");
+    }
+}
+</script>
+            
+
     </header>
 
     <main>
@@ -169,40 +196,6 @@
         </section>
 
     </main>
-
-    <script>
-        document.addEventListener("DOMContentLoaded", () => {
-
-            const itens = document.querySelectorAll(".Nome p");
-            const paginas = {};
-
-            itens.forEach(item => {
-                const nome = item.textContent.toLowerCase().split(" ")[0];
-                const link = item.closest(".Desc")
-                    .querySelector("a")
-                    .getAttribute("href");
-
-                paginas[nome] = link;
-            });
-
-            window.redirecionamento = function(event) {
-                event.preventDefault();
-
-                const valor = document
-                    .getElementById("busca")
-                    .value
-                    .toLowerCase()
-                    .trim();
-
-                if (paginas[valor]) {
-                    window.location.href = paginas[valor];
-                } else {
-                    alert("O que você digitou não foi encontrado!");
-                }
-            };
-
-        });
-    </script>
     <footer>
         <p>VTKF copyright 2026</p>
     </footer>
