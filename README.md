@@ -10,6 +10,15 @@ Os trabalhos em grupo também tiveram um papel importante, contribuindo para o d
 Este portfólio representa nossa evolução no desenvolvimento web, unindo prática, criatividade e trabalho em equipe ao longo do processo de aprendizagem.</p>
 
 ---
+## 👥 Integrantes
+
+| Nome | GitHub |
+|------|--------|
+| Gabriel | [@chuuyaswine](https://github.com/chuuyaswine) |
+| Isa | [@lunarcommit](https://github.com/lunarcommit) |
+| Kevin | [@Kevin645757hfh](https://github.com/Kevin645757hfh) |
+| Vitor | [@vitor-moretti](https://github.com/vitor-moretti) |
+---
 ## Linguagens sendo utilizadas atualmente:
 <p>
 <img src="https://img.shields.io/badge/HTML5-orange?logo=html5&logoColor=white" width="80" height="40">
