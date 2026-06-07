@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Design - O Curso</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Game Design</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="profissao.html">A Profissão</a></li>
+            <li><a href="curso.html" class="active">O Curso</a></li>
+            <li><a href="carreira.html">Carreira e Salários</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>A Graduação em Design de Jogos</h2>
+            <p>O curso superior pode ser oferecido como Bacharelado (4 anos) ou Tecnólogo (2 a 3 anos). Nele, o aluno aprende programação básica, modelagem 3D, roteiro, psicologia do jogador e gestão de projetos.</p>
+            
+            <h3>Onde Estudar? (Exemplos no Brasil)</h3>
+            <ul>
+                <li><strong>Anhembi Morumbi (SP):</strong> Pioneira no curso de Design de Games.</li>
+                <li><strong>PUC-SP / PUC-PR:</strong> Referências em tecnologia e jogos digitais.</li>
+                <li><strong>UNISINOS (RS):</strong> Fortíssima na área de desenvolvimento e jogos.</li>
+                <li><strong>FATEC (SP):</strong> Excelente opção pública na área de Jogos Digitais.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 - gabiroca e isabeluda</p>
+    </footer>
+
+</body>
+</html>
