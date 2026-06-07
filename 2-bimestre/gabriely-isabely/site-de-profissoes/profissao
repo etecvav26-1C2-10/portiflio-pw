@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Design - A Profissão</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Game Design</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="profissao.html" class="active">A Profissão</a></li>
+            <li><a href="curso.html">O Curso</a></li>
+            <li><a href="carreira.html">Carreira e Salários</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>O que é um Game Designer?</h2>
+            <p>Diferente do que muitos pensam, o Game Designer não foca apenas em programar códigos ou desenhar personagens. Ele é considerado o "arquiteto" ou o "diretor criativo" do jogo. Este profissional é o responsável por idealizar o conceito central, estruturar as regras, definir a jogabilidade (gameplay), criar a história e ditar o ritmo da experiência que o jogador terá.</p>
+            <p>Seu principal objetivo é transformar uma ideia abstrata em um sistema interativo que seja divertido, desafiador e comercialmente viável.</p>
+        </section>
+
+        <section>
+            <h2>Áreas de Especialização</h2>
+            <p>Em grandes estúdios (conhecidos como indústrias AAA), o trabalho de Game Design é tão complexo que se divide em várias especialidades:</p>
+            <ul>
+                <li><strong>System Designer:</strong> Foca na criação das regras gerais do jogo, sistemas de evolução, economia interna (ouro, XP) e no balanceamento de combate ou habilidades.</li>
+                <li><strong>Level Designer:</strong> Responsável por construir o mapa, as fases e o posicionamento dos desafios, garantindo que o jogador saiba para onde ir e sinta a dificuldade progredir de forma justa.</li>
+                <li><strong>Narrative Designer:</strong> Cria o enredo, a lore (história de fundo), os diálogos dos personagens e a forma como a história é contada através das ações do jogador no mundo.</li>
+                <li><strong>UI/UX Designer para Jogos:</strong> Desenha os menus, barras de vida, inventários e interfaces, garantindo que a navegação do jogador seja intuitiva e não quebre a imersão.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Ferramentas do Dia a Dia</h2>
+            <p>Para tirar as ideias do papel e testá-las na prática, o Game Designer utiliza uma série de softwares e ferramentas tecnológicas:</p>
+            <ul>
+                <li><strong>Motores de Jogo (Game Engines):</strong> Unity, Unreal Engine e Godot (para implementar regras e prototipar mecânicas).</li>
+                <li><strong>Documentação e Organização:</strong> Notion, Confluence e Google Docs (para a escrita do GDD - Game Design Document).</li>
+                <li><strong>Fluxogramas e Mindmaps:</strong> Miro, Miro ou Draw.io (para planejar a jornada do jogador e a lógica de missões).</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Perfil Profissional Desejado</h2>
+            <p>Para se destacar na área de informática voltada a jogos, o profissional precisa desenvolver habilidades multidisciplinares:</p>
+            <ul>
+                <li><strong>Comunicação Clara:</strong> Essencial para explicar suas ideias para programadores e artistas visuais.</li>
+                <li><strong>Pensamento Lógico e Analítico:</strong> Necessário para entender matemática de balanceamento e lógica de programação.</li>
+                <li><strong>Psicologia do Jogador:</strong> Empatia para entender o que motiva o público-alvo a continuar jogando.</li>
+                <li><strong>Resolução de Problemas:</strong> Capacidade de testar o jogo (playtest), identificar o que está chato ou quebrado e consertar a mecânica.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 - gabiroca e isabeluda</p>
+    </footer>
+
+</body>
+</html>
