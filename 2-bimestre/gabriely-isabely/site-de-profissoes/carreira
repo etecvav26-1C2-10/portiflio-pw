@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Design - Carreira e Salários</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Game Design</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="profissao.html">A Profissão</a></li>
+            <li><a href="curso.html">O Curso</a></li>
+            <li><a href="carreira.html" class="active">Carreira e Salários</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Mercado de Trabalho e Empresas</h2>
+            <p>O mercado é global. Um Game Designer brasileiro pode trabalhar tanto em estúdios nacionais quanto remotamente para grandes empresas do exterior.</p>
+            
+            <h3>Empresas que utilizam essa mão de obra:</h3>
+            <ul>
+                <li><strong>Nacionais:</strong> Wildlife Studios, Kokku, Behold Studios.</li>
+                <li><strong>Internacionais:</strong> Ubisoft, Electronic Arts (EA), Epic Games, Riot Games.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Média Salarial</h2>
+            <p>Os salários variam muito de acordo com a experiência (Júnior, Pleno, Sênior) e a região de atuação.</p>
+            
+            <ul>
+                <li><strong>Game Designer Júnior:</strong> R$ 3.500,00 a R$ 5.000,00</li>
+                <li><strong>Game Designer Pleno:</strong> R$ 5.500,00 a R$ 8.500,00</li>
+                <li><strong>Game Designer Sênior:</strong> R$ 9.000,00 a R$ 15.000,00+</li>
+            </ul>
+            <p><em>No mercado internacional, profissionais experientes trabalhando remotamente podem receber em dólar ou euro, aumentando consideravelmente esses valores.</em></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 - gabiroca e isabeluda</p>
+    </footer>
+
+</body>
+</html>
