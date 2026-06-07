@@ -1,0 +1,160 @@
+/* Configurações Gerais - Tema Dark/Gamer */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #121214;
+    color: #e1e1e6;
+    line-height: 1.6;
+}
+
+/* Topo do Site */
+header {
+    background-color: #1f1f23;
+    padding: 30px 20px;
+    text-align: center;
+    border-bottom: 3px solid #5d0e9d;
+}
+
+header h1 {
+    color: #5d0e9d;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Menu de Navegação (Mobile First - Empilhado por padrão) */
+nav {
+    background-color: #29292e;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
+}
+
+nav a {
+    color: #a8a8b3;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    padding: 10px;
+    border-radius: 4px;
+    transition: 0.3s ease;
+}
+
+nav a:hover, nav a.active {
+    color: #ffffff;
+    background-color: #5d0e9d;
+}
+
+/* Conteúdo Principal */
+main {
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+section {
+    margin-bottom: 25px;
+    background-color: #1f1f23;
+    padding: 25px;
+    border-radius: 8px;
+    border: 1px solid #29292e;
+}
+
+/* Textos e Títulos */
+h2 {
+    color: #5d0e9d;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+h3 {
+    color: #ffffff;
+    margin: 20px 0 10px 0;
+}
+
+p {
+    margin-bottom: 15px;
+    color: #c4c4cc;
+}
+
+strong {
+    color: #ffffff;
+}
+
+/* Listas */
+ul {
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+li {
+    margin-bottom: 8px;
+    color: #c4c4cc;
+}
+
+/* Elementos Visuais e Destaques */
+.img-responsiva {
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    display: block;
+    margin: 25px auto;
+    border-radius: 8px;
+    border: 2px solid #5d0e9d;
+}
+
+.intro-destaque {
+    font-size: 1.1rem;
+    color: #e1e1e6;
+}
+
+.pilar-box {
+    background-color: #29292e;
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 6px;
+    border-left: 4px solid #5d0e9d;
+}
+
+/* Rodapé */
+footer {
+    background-color: #1f1f23;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 0.9rem;
+    color: #7c7c8a;
+    border-top: 1px solid #29292e;
+}
+
+/* Media Query para Telas Maiores (PC / Notebook) */
+@media (min-width: 768px) {
+    header h1 {
+        font-size: 2.8rem;
+    }
+
+    nav ul {
+        flex-direction: row;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    nav a {
+        padding: 8px 20px;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+}
