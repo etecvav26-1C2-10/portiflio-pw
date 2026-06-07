@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameDesign.exe - Home</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Game Design</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="profissao.html">A Profissão</a></li>
+            <li><a href="curso.html">O Curso</a></li>
+            <li><a href="carreira.html">Carreira e Salários</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Introdução</h2>
+            <p class="intro-destaque">
+                A profissão de Game Designer é uma das que vem crescendo muito recentemente no Brasil e no mundo. O que antes era visto apenas como um passatempo, hoje se transformou em uma das indústrias mais lucrativas do setor de tecnologia e entretenimento, movimentando bilhões de dólares todos os anos e superando os mercados de cinema e música somados.
+            </p> <p class="intro-destaque">
+                Com a expansão dos jogos para celulares, computadores e consoles, a demanda por profissionais qualificados na área de informática voltada para jogos disparou. O Game Designer surge como uma peça-chave nesse cenário, sendo o responsável por transformar ideias criativas em experiências interativas reais, divertidas e lucrativas.
+            </p>
+            
+            <img src="https://i.postimg.cc/tgRBkMyX/gddi-feature.webp" alt="Controle de Videogame e Luzes Neon" class="img-responsiva">
+        </section>
+
+        <section>
+            <h2>O que você vai encontrar por aqui:</h2>
+            
+            <p><strong>A Profissão:</strong> Entenda a rotina de quem desenha as mecânicas, regras e a jornada do jogador.</p>
+            <p><strong>O Curso:</strong> Conheça as principais faculdades e o que se estuda na graduação de Jogos Digitais.</p>
+            <p><strong>Mercado e Carreira:</strong> As grandes empresas do setor e a realidade dos salários de Júnior a Sênior.</p>
+            <p><strong>Sobre o Projeto:</strong> Detalhes sobre quem fez o trabalho.</p>
+            
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 - gabiroca e isabeluda</p>
+    </footer>
+
+</body>
+</html>
