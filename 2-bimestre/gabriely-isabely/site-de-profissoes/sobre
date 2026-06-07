@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Design - Sobre</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Game Design</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="profissao.html">A Profissão</a></li>
+            <li><a href="curso.html">O Curso</a></li>
+            <li><a href="carreira.html">Carreira e Salários</a></li>
+            <li><a href="sobre.html" class="active">Sobre</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Sobre os Autores</h2>
+            <p>Gabriely de Santana Alves - RM: 22815 </p>
+            <p>Isabely Caconde dos Santos - RM: 22806</p>
+            <p><strong>Curso:</strong> Ensino Médio / Técnico em Desenvolvimento de Sistemas</p>
+        </section>
+
+        <section>
+            <h2>Descrição do Trabalho</h2>
+            <p>O objetivo do trabalho é montar um site sobre alguma profissão da área do nosso curso — desenvolvimento de sistemas — usando HTML5 e CSS3</p>
+        </section>
+
+        <section>
+            <h2>Referências (Norma ABNT)</h2>
+            <p>SCHELL, Jesse. <strong>A Arte de Game Design</strong>: O livro de jogos. 2. ed. Rio de Janeiro: Elsevier, 2011.</p>
+            <p>WILDLIFE STUDIOS. <strong>Carreiras em Jogos Digitais</strong>. Disponível em: &lt;https://wildlifestudios.com&gt;. Acesso em: 1 jun. 2026.</p>
+            <p>GUIA DA CARREIRA. <strong>Quanto ganha um Game Designer?</strong> Disponível em: &lt;https://www.guiadacarreira.com.br&gt;. Acesso em: 1 jun. 2026.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 - gabiroca e isabeluda</p>
+    </footer>
+
+</body>
+</html>
