@@ -46,6 +46,16 @@ body::before {
 
 main {
     font-size: 20px; 
+    font-family: 'Times New Roman', Times, serif;
+}
+
+main h2{
+    justify-content: center;
+    display: flex;
+
+    font-family: "MedievalSharp", cursive;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .container {
@@ -95,6 +105,10 @@ main {
     align-items: left;
     scroll-snap-align: start;
 
+    font-family: "MedievalSharp", cursive;
+    font-weight: 400;
+    font-style: normal;
+
 
     transform: translateY(100vh); 
     opacity: 0;
@@ -117,3 +131,19 @@ main {
     box-shadow: 0 0 40px rgba(196, 169, 51, 0.9);
     padding: 2px;
 }
+
+form{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+form input{
+    width: 260px;
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+}
+
+
