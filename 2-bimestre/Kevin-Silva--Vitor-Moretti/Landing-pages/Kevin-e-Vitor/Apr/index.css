@@ -60,3 +60,15 @@ main .img-profile{
     border-radius: 10px;
     background-color: black;
 }
+
+.quem-somos a:hover{
+    color: rgb(0, 0, 0);
+    background-color: aliceblue;
+    border: 15px solid aliceblue;
+}
+
+.entre{
+    border: 2px solid rgb(77, 0, 77);
+    border-radius: 10px;
+    box-shadow: 0 0 20px purple;
+}
