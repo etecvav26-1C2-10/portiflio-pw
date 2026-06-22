@@ -1,0 +1,85 @@
+:root {
+    --cor-primaria:  rgb(28, 11, 44);
+    --cor-footer: rgba(76, 3, 172, 0.363);
+    --cor-texto: aliceblue;
+    --cor-rgb1: rgb(77, 0, 77);
+    --cor-rgb2: purple;
+    --cor-card: black;
+    --cor-conteudo: rgb(35, 6, 63);
+}
+
+
+/*Geral*/
+body{
+    background-color: var(--cor-primaria);
+    color: var(--cor-texto);
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+/*Conteúdo*/
+
+.conteudo h1{
+    display: flex;
+    justify-content: center;
+}
+
+.conteudo {
+    background-color: var(--cor-conteudo);
+    border: 10px solid var(--cor-conteudo);
+    border-radius: 10px;
+    box-shadow: 0 0 10px var(--cor-footer);
+}
+
+main .img-profile{
+    width: 200px;
+    height: 200px;
+    border-radius: 1000px;
+}
+
+/*Quem somos*/
+.quem-somos{
+    justify-content: center;
+    display: flex;
+    gap: 10px;
+    text-align: center;
+    padding: 10px;
+}
+
+/*Box do kevin*/
+.quem-somos .kevin-self{
+    border: 5px solid var(--cor-card);
+    border-radius: 10px;
+    box-shadow: 0 0 10px  var(--cor-footer);
+
+    background-color: var(--cor-card);
+}
+/*Box do vitor*/
+.quem-somos .vitor-self{
+    border: 5px solid var(--cor-card);
+    border-radius: 10px;
+    box-shadow: 0 0 10px var(--cor-footer);
+
+    background-color: var(--cor-card);
+}
+
+.quem-somos a{
+    border: 10px solid var(--cor-card);
+    border-radius: 10px;
+    background-color: var(--cor-card);
+}
+
+.quem-somos a:hover{
+    color: rgb(0, 0, 0);
+    background-color: var(--cor-texto);
+    border: 15px solid var(--cor-texto);
+}
+
+.entre{
+    border: 2px solid var(--cor-rgb1);
+    border-radius: 10px;
+    box-shadow: 0 0 20px var(--cor-rgb2);
+}
