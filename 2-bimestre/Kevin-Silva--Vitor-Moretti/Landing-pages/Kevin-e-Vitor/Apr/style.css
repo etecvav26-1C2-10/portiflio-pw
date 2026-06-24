@@ -84,4 +84,8 @@ main .img-profile{
     border: 2px solid var(--cor-rgb1);
     border-radius: 10px;
     box-shadow: 0 0 20px var(--cor-rgb2);
+   
+}
+footer{
+    text-align: center;
 }
