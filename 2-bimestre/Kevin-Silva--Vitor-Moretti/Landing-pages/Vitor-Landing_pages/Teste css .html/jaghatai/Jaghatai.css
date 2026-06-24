@@ -1,0 +1,176 @@
+
+/* FUNDO (céu + velocidade) */
+.tema-khan {
+    background: linear-gradient(-45deg, #1a1a1a, #3a3a3a, #222222, #555555);
+    background-size: 400% 400%;
+    animation: fundoKhan 10s ease infinite;
+    color: #f5f5f5;
+
+    position: relative;
+    overflow-x: hidden;
+}
+
+/* VENTO */
+.tema-khan .vento {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+/* linhas de vento */
+.tema-khan .vento::before,
+.tema-khan .vento::after {
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 2px;
+    background: linear-gradient(to right, transparent, white, transparent);
+    opacity: 0.6;
+}
+
+/* camada rápida */
+.tema-khan .vento::before {
+    box-shadow:
+        0vw 20vh white,
+        10vw 40vh white,
+        20vw 60vh white,
+        30vw 30vh white,
+        40vw 50vh white,
+        50vw 70vh white,
+        60vw 25vh white,
+        70vw 55vh white;
+
+    animation: ventoRapido 2s linear infinite;
+}
+
+/* camada lenta */
+.tema-khan .vento::after {
+    width: 180px;
+    opacity: 0.4;
+
+    box-shadow:
+        5vw 10vh white,
+        25vw 35vh white,
+        45vw 20vh white,
+        65vw 45vh white,
+        85vw 30vh white;
+
+    animation: ventoLento 4s linear infinite;
+}
+
+/* animações */
+@keyframes ventoRapido {
+    0% {
+        transform: translateX(-120vw);
+    }
+    100% {
+        transform: translateX(120vw);
+    }
+}
+
+@keyframes ventoLento {
+    0% {
+        transform: translateX(-120vw);
+    }
+    100% {
+        transform: translateX(120vw);
+    }
+}
+
+/* FUNDO animado */
+@keyframes fundoKhan {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* container */
+.tema-khan .pagina {
+    background-color: rgba(20, 20, 20, 0.9);
+    border-left: 5px solid #cccccc;
+    box-shadow: 0 0 25px rgba(255,255,255,0.1);
+
+    animation: aparecerKhan 0.8s ease-out;
+}
+
+@keyframes aparecerKhan {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* TÍTULO */
+.tema-khan h1 {
+    color: #ffffff;
+    animation: glowKhan 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes glowKhan {
+    from {
+        text-shadow: 0 0 5px #888;
+    }
+    to {
+        text-shadow: 0 0 20px #ffffff;
+    }
+}
+
+/* subtítulos */
+.tema-khan h2 {
+    border-bottom: 2px solid #888;
+}
+
+/* destaque */
+.tema-khan .destaque {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+/* imagem */
+.tema-khan .primarca-image {
+    border: 3px solid #888;
+    box-shadow: 0 0 20px rgba(255,255,255,0.3);
+    transition: 0.3s;
+}
+
+.tema-khan .primarca-image:hover {
+    transform: scale(1.06);
+    box-shadow: 0 0 40px rgba(255,255,255,0.7);
+}
+
+/* links */
+.tema-khan a {
+    color: #cccccc;
+}
+
+.tema-khan a:hover {
+    color: #ffffff;
+}
+
+.tema-khan .vento::before,
+.tema-khan .vento::after {
+    transform: translateX(var(--mouse-x)) translateY(var(--mouse-y));
+}
+
+@keyframes ventoRapido {
+    0% {
+        transform: translateX(-120vw) translateY(var(--mouse-y));
+    }
+    100% {
+        transform: translateX(120vw) translateY(var(--mouse-y));
+    }
+}
+
+@keyframes ventoLento {
+    0% {
+        transform: translateX(-120vw) translateY(var(--mouse-y));
+    }
+    100% {
+        transform: translateX(120vw) translateY(var(--mouse-y));
+    }
+}

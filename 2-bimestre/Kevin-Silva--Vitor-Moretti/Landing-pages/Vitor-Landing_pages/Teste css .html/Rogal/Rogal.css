@@ -1,0 +1,147 @@
+
+/* FUNDO (luz dourada imperial) */
+.tema-dorn {
+    background: linear-gradient(-45deg, #3a2b00, #6b4e00, #2a1f00, #8a6a00);
+    background-size: 400% 400%;
+    animation: fundoDorn 15s ease infinite;
+    color: #fff5cc;
+
+    position: relative;
+    overflow-x: hidden;
+}
+
+/* LUZ / PARTÍCULAS */
+.tema-dorn .luz {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+/* partículas douradas */
+.tema-dorn .luz::before,
+.tema-dorn .luz::after {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background: #ffd700;
+}
+
+/* brilho suave */
+.tema-dorn .luz::before {
+    box-shadow:
+        10vw 20vh #ffd700,
+        20vw 30vh #ffcc33,
+        30vw 40vh #ffd700,
+        40vw 25vh #ffdd55,
+        50vw 35vh #ffd700,
+        60vw 45vh #ffcc33,
+        70vw 30vh #ffd700,
+        80vw 50vh #ffdd55;
+
+    animation: subirLuz 12s linear infinite;
+}
+
+/* brilho lento */
+.tema-dorn .luz::after {
+    width: 3px;
+    height: 3px;
+
+    box-shadow:
+        15vw 60vh #ffd700,
+        35vw 70vh #ffcc33,
+        65vw 65vh #ffd700,
+        85vw 75vh #ffdd55;
+
+    animation: subirLuz 20s linear infinite;
+}
+
+/* movimento da luz */
+@keyframes subirLuz {
+    0% {
+        transform: translateY(0);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-120vh);
+        opacity: 0;
+    }
+}
+
+/* FUNDO animado */
+@keyframes fundoDorn {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* container */
+.tema-dorn .pagina {
+    background-color: rgba(40, 30, 0, 0.95);
+    border-left: 6px solid #ffd700;
+    box-shadow: 0 0 30px rgba(255,215,0,0.3);
+
+    animation: aparecerDorn 1s ease-out;
+}
+
+@keyframes aparecerDorn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* TÍTULO */
+.tema-dorn h1 {
+    color: #ffd700;
+    animation: glowDorn 3s ease-in-out infinite alternate;
+}
+
+@keyframes glowDorn {
+    from {
+        text-shadow: 0 0 5px #665500;
+    }
+    to {
+        text-shadow: 0 0 25px #ffd700;
+    }
+}
+
+/* subtítulos */
+.tema-dorn h2 {
+    border-bottom: 2px solid #bfa000;
+}
+
+/* destaque */
+.tema-dorn .destaque {
+    color: #ffd700;
+    font-weight: bold;
+}
+
+/* imagem */
+.tema-dorn .primarca-image {
+    border: 3px solid #bfa000;
+    box-shadow: 0 0 20px rgba(255,215,0,0.5);
+    transition: 0.3s;
+}
+
+.tema-dorn .primarca-image:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 40px rgba(255,215,0,0.9);
+}
+
+/* links */
+.tema-dorn a {
+    color: #ffd700;
+}
+
+.tema-dorn a:hover {
+    color: #fff0a0;
+}

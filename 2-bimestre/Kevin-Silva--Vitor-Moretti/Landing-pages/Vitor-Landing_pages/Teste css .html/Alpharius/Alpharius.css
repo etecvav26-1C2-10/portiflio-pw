@@ -1,0 +1,78 @@
+
+/* FUNDO ANIMADO (ilusão + distorção) */
+.tema-alpha {
+    background: linear-gradient(-45deg, #001a1a, #003333, #001010, #004d4d);
+    background-size: 400% 400%;
+    animation: fundoAlpha 8s ease infinite;
+    color: #ccffff;
+}
+
+/* animação do fundo */
+@keyframes fundoAlpha {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* container */
+.tema-alpha .pagina {
+    background-color: rgba(0, 20, 20, 0.95);
+    border-left: 5px solid #00cccc;
+    box-shadow: 0 0 25px rgba(0,255,255,0.15);
+}
+
+/* TÍTULO COM GLITCH */
+.tema-alpha h1 {
+    color: #00ffff;
+    position: relative;
+    animation: glitchAlpha 1.5s infinite;
+}
+
+/* efeito glitch */
+@keyframes glitchAlpha {
+    0% { text-shadow: 2px 0 #00ffff, -2px 0 #006666; }
+    25% { text-shadow: -2px 0 #00ffff, 2px 0 #003333; }
+    50% { text-shadow: 2px 2px #00cccc, -2px -2px #001a1a; }
+    75% { text-shadow: -2px 2px #00ffff, 2px -2px #004444; }
+    100% { text-shadow: 2px 0 #00ffff, -2px 0 #006666; }
+}
+
+/* subtítulos */
+.tema-alpha h2 {
+    border-bottom: 2px dashed #00cccc;
+    color: #ffffff;
+}
+
+/* destaque */
+.tema-alpha .destaque {
+    color: #00ffff;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* IMAGEM COM DUPLICAÇÃO */
+.tema-alpha .primarca-image {
+    border: 3px solid #00cccc;
+    box-shadow: 0 0 20px rgba(0,255,255,0.3);
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* efeito hover duplicado */
+.tema-alpha .primarca-image:hover {
+    transform: scale(1.05);
+    box-shadow: 
+        0 0 30px rgba(0,255,255,0.6),
+        5px 0 15px rgba(0,255,255,0.3),
+        -5px 0 15px rgba(0,255,255,0.3);
+}
+
+/* links */
+.tema-alpha a {
+    color: #00cccc;
+    transition: 0.3s;
+}
+
+.tema-alpha a:hover {
+    color: #ffffff;
+}

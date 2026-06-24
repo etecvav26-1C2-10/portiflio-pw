@@ -1,0 +1,145 @@
+
+/* FUNDO (gelo + vento) */
+.tema-russ {
+    background: linear-gradient(-45deg, #0a1a2f, #1c3d5a, #0f2a44, #091520);
+    background-size: 400% 400%;
+    animation: fundoRuss 12s ease infinite;
+    color: #dfefff;
+
+    position: relative;
+    overflow-x: hidden;
+}
+
+/* NEVE */
+.tema-russ .neve {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+/* partículas */
+.tema-russ .neve::before,
+.tema-russ .neve::after {
+    content: "";
+    position: absolute;
+    width: 3px;
+    height: 3px;
+    background: white;
+}
+
+/* neve leve */
+.tema-russ .neve::before {
+    box-shadow:
+        10vw -10vh white,
+        20vw -20vh white,
+        30vw -15vh white,
+        40vw -25vh white,
+        50vw -10vh white,
+        60vw -30vh white,
+        70vw -20vh white,
+        80vw -15vh white,
+        90vw -25vh white;
+
+    animation: cairNeve 8s linear infinite;
+}
+
+/* neve mais lenta */
+.tema-russ .neve::after {
+    width: 2px;
+    height: 2px;
+
+    box-shadow:
+        15vw -5vh white,
+        35vw -10vh white,
+        55vw -20vh white,
+        75vw -15vh white;
+
+    animation: cairNeve 14s linear infinite;
+}
+
+/* animação neve */
+@keyframes cairNeve {
+    0% {
+        transform: translateY(0) translateX(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(120vh) translateX(20px);
+        opacity: 0;
+    }
+}
+
+/* FUNDO animado */
+@keyframes fundoRuss {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* container */
+.tema-russ .pagina {
+    background-color: rgba(10, 20, 40, 0.95);
+    border-left: 5px solid #7ec8ff;
+    box-shadow: 0 0 25px rgba(0,150,255,0.3);
+
+    animation: aparecerRuss 1s ease-out;
+}
+
+@keyframes aparecerRuss {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* título */
+.tema-russ h1 {
+    color: #9fdcff;
+    animation: glowRuss 2s ease-in-out infinite alternate;
+}
+
+@keyframes glowRuss {
+    from {
+        text-shadow: 0 0 5px #003366;
+    }
+    to {
+        text-shadow: 0 0 20px #66ccff;
+    }
+}
+
+/* subtítulos */
+.tema-russ h2 {
+    border-bottom: 2px solid #336699;
+}
+
+/* destaque */
+.tema-russ .destaque {
+    color: #7ec8ff;
+    font-weight: bold;
+}
+
+/* imagem */
+.tema-russ .primarca-image {
+    border: 3px solid #336699;
+    box-shadow: 0 0 20px rgba(0,150,255,0.5);
+    transition: 0.3s;
+}
+
+.tema-russ .primarca-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 40px rgba(0,150,255,0.9);
+}
+
+/* links */
+.tema-russ a {
+    color: #7ec8ff;
+}
+
+.tema-russ a:hover {
+    color: #cceeff;
+}

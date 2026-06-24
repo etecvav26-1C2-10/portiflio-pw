@@ -1,0 +1,52 @@
+
+.tema-konrad {
+    background: linear-gradient(-50deg, #0f0646, #0c0729, #070516, #1d0c88);
+    color: #7e7656;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.tema-konrad h1{
+    color: #826db8;
+}
+
+.tema-konrad .pagina {
+    background-color: rgba(9, 10, 66, 0.95);
+    border-left: 6px solid #826db8;
+    box-shadow: 0 0 30px rgba(26, 13, 100, 0.3);
+}
+
+/* subtítulos */
+.tema-konrad h2 {
+    border-bottom: 2px solid #826db8;
+}
+
+/* destaque */
+.tema-konrad .destaque {
+    color: #826db8;
+    font-weight: bold;
+}
+
+/* imagem */
+.tema-konrad .primarca-image {
+    border: 3px solid #0a018f;
+    box-shadow: 0 0 20px rgba(23, 6, 173, 0.5);
+    transition: 0.3s;
+}
+
+.tema-konrad .primarca-image:hover {
+    transform: scale(1.04);
+}
+
+.tema-konrad .nav {
+    color: #0a018f;
+}
+
+/* links */
+.tema-konrad a {
+    color: #0a018f;
+}
+
+.tema-konrad a:hover {
+    color: #400074;
+}

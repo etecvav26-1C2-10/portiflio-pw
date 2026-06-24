@@ -1,0 +1,104 @@
+
+/* FUNDO ANIMADO (névoa tóxica) */
+.tema-mortarion {
+    background: linear-gradient(-45deg, #1a2b1a, #2f4f2f, #0f1a0f, #3a5f3a);
+    background-size: 400% 400%;
+    animation: fundoMortarion 14s ease infinite;
+    color: #d6e6d6;
+
+    position: relative;
+    overflow-x: hidden;
+}
+
+.tema-mortarion .pagina::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+
+    background: radial-gradient(circle, rgba(173,255,47,0.08) 0%, transparent 70%);
+    
+    animation: nevoaMortarion 20s linear infinite;
+    pointer-events: none; /* não atrapalha cliques */
+}
+
+@keyframes nevoaMortarion {
+    0% {
+        transform: translate(0, 0);
+    }
+    50% {
+        transform: translate(-10%, -10%);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+/* animação do fundo */
+@keyframes fundoMortarion {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* container */
+.tema-mortarion .pagina {
+    background-color: rgba(15, 25, 15, 0.95);
+    border-left: 5px solid #7fff00;
+    box-shadow: 0 0 25px rgba(127,255,0,0.2);
+}
+
+/* TÍTULO COM GLOW DOENTE */
+.tema-mortarion h1 {
+    color: #9acd32;
+    animation: glowMortarion 2.5s ease-in-out infinite alternate;
+}
+
+/* animação do brilho */
+@keyframes glowMortarion {
+    from {
+        text-shadow: 0 0 5px #6b8e23;
+    }
+    to {
+        text-shadow: 0 0 20px #adff2f;
+    }
+}
+
+/* subtítulos */
+.tema-mortarion h2 {
+    border-bottom: 2px solid #556b2f;
+    color: #ffffff;
+}
+
+/* destaque */
+.tema-mortarion .destaque {
+    color: #adff2f;
+    font-weight: bold;
+}
+
+/* IMAGEM COM EFEITO “CONTAMINADO” */
+.tema-mortarion .primarca-image {
+    border: 3px solid #6b8e23;
+    box-shadow: 0 0 20px rgba(173,255,47,0.4);
+    filter: sepia(30%) hue-rotate(60deg) brightness(0.9);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
+}
+
+/* efeito hover */
+.tema-mortarion .primarca-image:hover {
+    transform: scale(1.04);
+    box-shadow: 0 0 40px rgba(173,255,47,0.8);
+    filter: sepia(50%) hue-rotate(80deg) brightness(1);
+}
+
+/* links */
+.tema-mortarion a {
+    color: #7fff00;
+    transition: 0.3s;
+}
+
+.tema-mortarion a:hover {
+    color: #adff2f;
+}

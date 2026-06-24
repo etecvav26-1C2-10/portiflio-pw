@@ -1,0 +1,52 @@
+
+.tema-sanguinius {
+    background: linear-gradient(-25deg, #be0000, #910000, #6d0000, #470000);
+    color: #aa912c;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.tema-sanguinius h1{
+    color: #eebe00;
+}
+
+.tema-sanguinius .pagina {
+    background-color: rgba(95, 19, 19, 0.781);
+    border-left: 6px solid #d4aa00;
+    box-shadow: 0 0 30px rgb(255, 187, 0);
+}
+
+/* subtítulos */
+.tema-sanguinius h2 {
+    border-bottom: 2px solid #d4aa00;
+}
+
+/* destaque */
+.tema-sanguinius .destaque {
+    color: #ffdb4a;
+    font-weight: bold;
+}
+
+/* imagem */
+.tema-sanguinius .primarca-image {
+    border: 3px solid #d4aa0080;
+    box-shadow: 0 0 20px rgb(255, 0, 0);
+    transition: 0.3s;
+}
+
+.tema-sanguinius .primarca-image:hover {
+    transform: scale(1.04);
+}
+
+.tema-sanguinius .nav {
+    color: #d4aa00;
+}
+
+/* links */
+.tema-sanguinius a {
+    color: #d4aa00;
+}
+
+.tema-sanguinius a:hover {
+    color: #d42a2a;
+}

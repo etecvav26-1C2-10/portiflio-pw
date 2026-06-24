@@ -1,0 +1,72 @@
+/* FUNDO ANIMADO (energia imperial azul) */
+.tema-guilliman {
+    background: linear-gradient(-45deg, #0a1a2f, #102a4a, #0d223d, #1a3b6b);
+    background-size: 400% 400%;
+    animation: fundoGuilliman 12s ease infinite;
+    color: #e6f0ff;
+}
+
+/* animação do fundo */
+@keyframes fundoGuilliman {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* container */
+.tema-guilliman .pagina {
+    background-color: rgba(10, 20, 40, 0.95);
+    border-left: 5px solid #ffd700;
+    box-shadow: 0 0 25px rgba(255,215,0,0.2);
+}
+
+/* TÍTULO COM GLOW IMPERIAL */
+.tema-guilliman h1 {
+    color: #ffd700;
+    animation: glowGuilliman 2s ease-in-out infinite alternate;
+}
+
+/* animação do brilho */
+@keyframes glowGuilliman {
+    from {
+        text-shadow: 0 0 5px #ffd700, 0 0 10px #ffd700;
+    }
+    to {
+        text-shadow: 0 0 20px #ffd700, 0 0 35px #ffd700;
+    }
+}
+
+/* subtítulos */
+.tema-guilliman h2 {
+    border-bottom: 2px solid #3399ff;
+    color: #ffffff;
+}
+
+/* destaque */
+.tema-guilliman .destaque {
+    color: #ffd700;
+    font-weight: bold;
+}
+
+/* IMAGEM COM ENERGIA */
+.tema-guilliman .primarca-image {
+    border: 3px solid #3399ff;
+    box-shadow: 0 0 20px rgba(51,153,255,0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* efeito hover */
+.tema-guilliman .primarca-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 40px rgba(51,153,255,0.9);
+}
+
+/* links */
+.tema-guilliman a {
+    color: #3399ff;
+    transition: 0.3s;
+}
+
+.tema-guilliman a:hover {
+    color: #ffd700;
+}

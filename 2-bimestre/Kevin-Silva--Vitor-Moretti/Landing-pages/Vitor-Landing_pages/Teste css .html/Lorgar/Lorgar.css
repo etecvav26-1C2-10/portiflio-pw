@@ -1,0 +1,199 @@
+
+/* FUNDO ANIMADO (energia caótica / fogo warp) */
+.tema-lorgar {
+    background: linear-gradient(-45deg, #2b0000, #4b0000, #1a0000, #660000);
+    background-size: 400% 400%;
+    animation: fundoLorgar 12s ease infinite;
+    color: #f2dede;
+
+    position: relative;
+    overflow-x: hidden;
+
+}
+
+/* Animação para as faíscas*/
+
+.tema-lorgar .faiscas {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+/* CAMADA 1 */
+.tema-lorgar .faiscas::before,
+.tema-lorgar .faiscas::after {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background: transparent;
+}
+
+/* faíscas pequenas */
+.tema-lorgar .faiscas::before {
+    box-shadow:
+        10vw 90vh #ff3300,
+        20vw 95vh #ff0000,
+        30vw 92vh #ff6600,
+        40vw 97vh #ff2200,
+        50vw 93vh #ff4400,
+        60vw 96vh #ff0000,
+        70vw 94vh #ff5500,
+        80vw 98vh #ff2200,
+        90vw 91vh #ff3300,
+
+        15vw 88vh #ff1100,
+        25vw 89vh #ff6600,
+        35vw 87vh #ff2200,
+        45vw 90vh #ff0000,
+        55vw 88vh #ff3300,
+        65vw 89vh #ff5500,
+        75vw 87vh #ff1100,
+        85vw 90vh #ff4400;
+
+    animation: subirFaiscas 4s linear infinite;
+}
+
+/* faíscas maiores + blur */
+.tema-lorgar .faiscas::after {
+    width: 3px;
+    height: 3px;
+
+    box-shadow:
+        12vw 95vh #ff6600,
+        28vw 97vh #ff0000,
+        52vw 96vh #ff3300,
+        68vw 98vh #ff2200,
+        85vw 94vh #ff5500;
+
+    filter: blur(1px);
+
+    animation: subirFaiscas 9s linear infinite;
+}
+
+/* movimento principal */
+@keyframes subirFaiscas {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-120vh);
+        opacity: 0;
+    }
+}
+
+@keyframes subirFaiscas {
+    0% {
+        transform: translateY(0) translateX(0);
+        opacity: 1;
+    }
+    50% {
+        transform: translateY(-60vh) translateX(-10px);
+    }
+    100% {
+        transform: translateY(-120vh) translateX(10px);
+        opacity: 0;
+    }
+}
+/* Fim animação faíscas*/
+/*Animação fundo*/
+
+
+.tema-lorgar .pagina::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+
+    background: radial-gradient(circle, rgba(255,0,0,0.08) 0%, transparent 70%);
+    
+    animation: energiaLorgar 18s linear infinite;
+    pointer-events: none;
+}
+
+@keyframes energiaLorgar {
+    0% { transform: translate(0, 0); }
+    50% { transform: translate(-8%, -8%); }
+    100% { transform: translate(0, 0); }
+}
+
+/* animação do fundo */
+@keyframes fundoLorgar {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* container */
+.tema-lorgar .pagina {
+    background-color: rgba(25, 0, 0, 0.95);
+    border-left: 5px solid #ff3333;
+    box-shadow: 0 0 25px rgba(255,0,0,0.3);
+
+    animation: aparecerLorgar 1s ease-out;
+}
+
+@keyframes aparecerLorgar {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* TÍTULO COM GLOW SOMBRIO */
+.tema-lorgar h1 {
+    color: #ff4d4d;
+    animation: glowLorgar 2s ease-in-out infinite alternate;
+}
+
+@keyframes glowLorgar {
+    from {
+        text-shadow: 0 0 5px #800000;
+    }
+    to {
+        text-shadow: 0 0 20px #ff0000;
+    }
+}
+
+/* subtítulos */
+.tema-lorgar h2 {
+    border-bottom: 2px solid #990000;
+    color: #ffffff;
+}
+
+/* destaque */
+.tema-lorgar .destaque {
+    color: #ff3333;
+    font-weight: bold;
+}
+
+/* IMAGEM COM EFEITO CAÓTICO */
+.tema-lorgar .primarca-image {
+    border: 3px solid #800000;
+    box-shadow: 0 0 20px rgba(255,0,0,0.5);
+    filter: contrast(1.1) saturate(1.2);
+    transition: 0.3s;
+}
+
+.tema-lorgar .primarca-image:hover {
+    transform: scale(1.04);
+    box-shadow: 0 0 40px rgba(255,0,0,0.9);
+}
+
+/* links */
+.tema-lorgar a {
+    color: #ff3333;
+    transition: 0.3s;
+}
+
+.tema-lorgar a:hover {
+    color: #ff6666;
+}

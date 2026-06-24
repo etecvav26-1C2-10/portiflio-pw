@@ -1,0 +1,132 @@
+.tema-magnus {
+    background: linear-gradient(-45deg, #c71700, #550707, #330f0f, #3a1919);
+    background-size: 400% 400%;
+    animation: fundoDorn 15s ease infinite;
+    color: #ffefb0;
+
+    position: relative;
+    overflow-x: hidden;
+}
+
+.tema-magnus h1{
+    color: gold;
+}
+
+.tema-magnus .pagina {
+    background-color: rgba(40, 0, 0, 0.95);
+    border-left: 6px solid #ffd700;
+    box-shadow: 0 0 30px rgba(255, 0, 0, 0.3);
+
+    animation: aparecerDorn 1s ease-out;
+}
+
+/* subtítulos */
+.tema-magnus h2 {
+    border-bottom: 2px solid #bfa000;
+}
+
+/* destaque */
+.tema-magnus .destaque {
+    color: #ffd700;
+    font-weight: bold;
+}
+
+/* imagem */
+.tema-magnus .primarca-image {
+    border: 3px solid #bfa000;
+    box-shadow: 0 0 20px rgba(255,215,0,0.5);
+    transition: 0.3s;
+}
+
+.tema-magnus .primarca-image:hover {
+    transform: scale(1.04);
+}
+
+.tema-magnus .nav {
+    color: gold;
+}
+
+/* links */
+.tema-magnus a {
+    color: #ff0000;
+}
+
+.tema-magnus a:hover {
+    color: gold;
+}
+
+/* olho */
+
+.tema-magnus .olho {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* glow externo */
+    box-shadow: 0 0 60px rgba(150, 0, 255, 0.6); 
+}
+
+.tema-magnus .iris {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+
+    background: radial-gradient(
+        circle,
+        #1a001f 10%,  
+        #5a00a0 40%,   
+        #b84dff 70%,   
+        transparent 100%
+    );
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    animation: pulsa 2s ease-in-out infinite alternate;
+}
+
+
+.tema-magnus .olho:after,
+.tema-magnus .olho:before{
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 200px;
+
+    animation: pulsa 3s linear;
+}
+
+/* movimento do olho */
+@keyframes pulsa {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 30px rgba(150,0,255,0.4);
+    }
+    50% {
+        transform: scale(1.05);
+        box-shadow: 0 0 60px rgba(180,0,255,0.8);
+    }
+    100% {
+        transform: scale(1.1);
+        box-shadow: 0 0 40px rgba(150,0,255,0.5);
+    }
+}
+
+.tema-magnus .pupila {
+    width: 40px;
+    height: 40px;
+    background: black;
+    border-radius: 50%;
+
+    transition: transform 0.1s linear;
+}

@@ -1,0 +1,52 @@
+
+.tema-angron {
+    background: linear-gradient(-40deg, #ff9f21, #ff960e, #ff6721, #ff4800);
+    color:  #f2ff3db9;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.tema-angron h1{
+    color: #630000;
+}
+
+.tema-angron .pagina {
+    background-color: rgb(212, 112, 65);
+    border-left: 6px solid #6e0000;
+    box-shadow: 0 0 30px rgb(255, 123, 0);
+}
+
+/* subtítulos */
+.tema-angron h2 {
+    border-bottom: 4px solid #6e0000;
+}
+
+/* destaque */
+.tema-angron .destaque {
+    color: #af0000;
+    font-weight: bold;
+}
+
+/* imagem */
+.tema-angron .primarca-image {
+    border: 3px solid #6e0000;
+    box-shadow: 0 0 20px rgba(253, 255, 137, 0.733);
+    transition: 0.3s;
+}
+
+.tema-angron .primarca-image:hover {
+    transform: scale(1.04);
+}
+
+.tema-angron .nav {
+    color: #e6d38a;
+}
+
+/* links */
+.tema-angron a {
+    color: #e6d38a;
+}
+
+.tema-angron a:hover {
+    color: #ff0000;
+}

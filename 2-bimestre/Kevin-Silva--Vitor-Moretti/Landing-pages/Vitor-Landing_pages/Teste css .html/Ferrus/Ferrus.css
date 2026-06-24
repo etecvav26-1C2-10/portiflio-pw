@@ -1,0 +1,52 @@
+
+.tema-ferrus {
+    background: linear-gradient(-40deg, #93a1a5, #76949c, #607379, #445053);
+    color:  #ffffff;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.tema-ferrus h1{
+    color: #80bdce;
+}
+
+.tema-ferrus .pagina {
+    background-color: rgba(0, 79, 143, 0.514);
+    border-left: 6px solid #2b8da8ab;
+    box-shadow: 0 0 30px rgb(255, 245, 216);
+}
+
+/* subtítulos */
+.tema-ferrus h2 {
+    border-bottom: 2px solid #00aad4;
+}
+
+/* destaque */
+.tema-ferrus .destaque {
+    color: #e6d38a;
+    font-weight: bold;
+}
+
+/* imagem */
+.tema-ferrus .primarca-image {
+    border: 3px solid #7a8eff80;
+    box-shadow: 0 0 20px rgba(253, 255, 137, 0.733);
+    transition: 0.3s;
+}
+
+.tema-ferrus .primarca-image:hover {
+    transform: scale(1.04);
+}
+
+.tema-ferrus .nav {
+    color: #e6d38a;
+}
+
+/* links */
+.tema-ferrus a {
+    color: #e6d38a;
+}
+
+.tema-ferrus a:hover {
+    color: #008cff;
+}
