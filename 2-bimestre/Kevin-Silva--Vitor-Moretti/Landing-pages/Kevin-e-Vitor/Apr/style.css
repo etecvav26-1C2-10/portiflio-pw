@@ -6,6 +6,7 @@
     --cor-rgb2: purple;
     --cor-card: black;
     --cor-conteudo: rgb(35, 6, 63);
+    --cor-links: #EAF6AD;
 }
 
 
@@ -17,7 +18,7 @@ body{
 
 a{
     text-decoration: none;
-    color: inherit;
+    color: var(--cor-links);
 }
 
 /*Conteúdo*/
@@ -42,8 +43,9 @@ main .img-profile{
 
 /*Quem somos*/
 .quem-somos{
-    justify-content: center;
     display: flex;
+    flex-direction: column;
+    align-items: center;
     gap: 10px;
     text-align: center;
     padding: 10px;
