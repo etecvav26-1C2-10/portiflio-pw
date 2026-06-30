@@ -6,9 +6,7 @@
     animation: fundoLorgar 12s ease infinite;
     color: #f2dede;
 
-    position: relative;
     overflow-x: hidden;
-
 }
 
 /* Animação para as faíscas*/

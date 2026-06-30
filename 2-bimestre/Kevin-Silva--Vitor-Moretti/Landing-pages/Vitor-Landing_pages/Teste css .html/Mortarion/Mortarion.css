@@ -5,8 +5,7 @@
     background-size: 400% 400%;
     animation: fundoMortarion 14s ease infinite;
     color: #d6e6d6;
-
-    position: relative;
+    
     overflow-x: hidden;
 }
 
