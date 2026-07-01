@@ -17,7 +17,7 @@
 
     <main>
         <br>
-        <h2>PRIMARCAS E SEUS CAPITULOS</h2>
+        <h2>PRIMARCAS</h2>
 
             
     <!--barra de pesquisa-->
@@ -78,9 +78,13 @@
                 }    
     </script>
 
-    <!--imagens e botão de rolagem-->
+    <!--Primarcas-->
 <div class="container">
-    <button onclick="scrollGaleria(-1)">◀</button> <!--botão de rolagem para a esquerda-->
+    <div class="esquerda">
+        <div class="botao">
+        <button onclick="scrollGaleria(-1)">◀</button> <!--botão de rolagem para a esquerda-->
+        </div>  
+    </div>
 
     <div class="galeria" id="galeria"> <!--imagens-->
 
@@ -198,11 +202,15 @@
                 <img src="../Alpharius/Alpharius-Omegon.jpg" alt="Alpharius Omegon"> <!--Alpharius Omegon-->
             </a>
         </div>
+    </div> <!--fim dos primarcas-->
 
-    </div> <!--fim das imagens-->
-
-    <button onclick="scrollGaleria(1)">▶</button> <!--botão de rolagem para a direita-->
+    <div class="direita">
+        <div class="botao">
+            <button onclick="scrollGaleria(1)">▶</button> <!--botão de rolagem para a direita-->
+        </div>
+    </div>
 </div>
+
 
 </body>
 </html>
