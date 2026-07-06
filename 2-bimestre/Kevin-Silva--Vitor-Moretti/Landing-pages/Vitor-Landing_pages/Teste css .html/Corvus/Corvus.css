@@ -98,3 +98,27 @@
 .tema-corax .nav a {
     width: fit-content;
 }
+
+
+@media (min-width: 768px) {
+    .tema-corax .topo {
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .tema-corax .primarca-image {
+        width: 250px;
+        max-width: none;
+        border-radius: 8px;
+    }
+
+    .tema-corax .resumo p {
+        font-size: 1.6rem;
+    }
+
+    .tema-corax .nav {
+        justify-content: space-between;
+        padding: 20px;
+    }
+}
