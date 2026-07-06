@@ -48,8 +48,19 @@
     font-weight: bold;
 }
 
+/*Mobile*/
+.tema-corax .topo {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
 /* IMAGEM COM EFEITO "DESAPARECER" */
 .tema-corax .primarca-image {
+    width: 100%;
+    max-width: 420px;
+    height: auto;
+
     border: 3px solid #333333;
     box-shadow: 0 0 15px rgba(255,255,255,0.1);
     opacity: 0.85;
@@ -63,6 +74,11 @@
     opacity: 1;
 }
 
+.tema-corax .resumo p {
+    font-size: clamp(1rem, 3.8vw, 1.25rem);
+    line-height: 1.55;
+}
+
 /* links */
 .tema-corax a {
     color: #888888;
@@ -71,4 +87,14 @@
 
 .tema-corax a:hover {
     color: #ffffff;
+}
+
+.tema-corax .nav {
+    display: flex;
+    gap: 12px;
+    padding: 16px 0;
+}
+
+.tema-corax .nav a {
+    width: fit-content;
 }

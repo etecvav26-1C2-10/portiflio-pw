@@ -24,6 +24,8 @@
 .tema-lion h1 {
     color: #c0a060;
     animation: glowLion 2.5s ease-in-out infinite alternate;
+    font-size: clamp(1.4rem, 4vw, 2rem);
+    line-height: 1.2;
 }
 
 /* animação do brilho */
@@ -40,6 +42,7 @@
 .tema-lion h2 {
     border-bottom: 2px solid #406b5a;
     color: #ffffff;
+    font-size: clamp(1.05rem, 3.6vw, 1.35rem);
 }
 
 /* destaque */
@@ -48,9 +51,20 @@
     font-weight: bold;
 }
 
-/*  IMAGEM COM EFEITO SOMBRIO */
+/*MOBILE-FIRST*/
+.tema-lion .topo {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
 .tema-lion .primarca-image {
+    width: 100%;
+    max-width: 420px;
+    height: auto;
+
     border: 3px solid #406b5a;
+    border-radius: 10px;
     box-shadow: 0 0 20px rgba(64,107,90,0.5);
     filter: brightness(0.9) contrast(1.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
@@ -58,9 +72,28 @@
 
 /* efeito hover */
 .tema-lion .primarca-image:hover {
-    transform: scale(1.05);
+    transform: scale(1.03);
     box-shadow: 0 0 40px rgba(192,160,96,0.6);
     filter: brightness(1.1) contrast(1.2);
+}
+
+.tema-lion .resumo p {
+    font-size: clamp(1rem, 3.8vw, 1.25rem);
+    line-height: 1.55;
+}
+
+.tema-lion .conteudo {
+    padding-bottom: 6px;
+}
+
+.tema-lion .nav {
+    display: flex;
+    gap: 12px;
+    padding: 16px 0;
+}
+
+.tema-lion .nav a {
+    width: fit-content;
 }
 
 /* links */
@@ -72,3 +105,28 @@
 .tema-lion a:hover {
     color: #c0a060;
 }
+
+/*DESKTOP ENHANCE*/
+@media (min-width: 768px) {
+    .tema-lion .topo {
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .tema-lion .primarca-image {
+        width: 250px;
+        max-width: none;
+        border-radius: 8px;
+    }
+
+    .tema-lion .resumo p {
+        font-size: 1.6rem;
+    }
+
+    .tema-lion .nav {
+        justify-content: space-between;
+        padding: 20px;
+    }
+}
+

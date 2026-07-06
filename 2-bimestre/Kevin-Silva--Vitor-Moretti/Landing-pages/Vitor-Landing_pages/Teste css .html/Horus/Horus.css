@@ -49,8 +49,19 @@
     font-weight: bold;
 }
 
+/*Mobile*/
+.tema-horus .topo {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
 /* IMAGEM COM ENERGIA CAÓTICA */
 .tema-horus .primarca-image {
+    width: 100%;
+    max-width: 420px;
+    height: auto;
+
     border: 3px solid #00ffcc;
     box-shadow: 0 0 25px rgba(0,255,204,0.4);
     filter: contrast(1.2) brightness(0.9);
@@ -64,6 +75,11 @@
     filter: contrast(1.4) brightness(1.1);
 }
 
+.tema-horus .resumo p {
+    font-size: clamp(1rem, 3.8vw, 1.25rem);
+    line-height: 1.55;
+}
+
 /* links */
 .tema-horus a {
     color: #00ffcc;
@@ -73,3 +89,39 @@
 .tema-horus a:hover {
     color: #ff3333;
 }
+
+.tema-horus .nav {
+    display: flex;
+    gap: 12px;
+    padding: 16px 0;
+    color: #e6d38a;
+}
+
+.tema-horus .nav a {
+    width: fit-content;
+}
+
+/* DESKTOP ENHANCE */
+@media (min-width: 768px) {
+    .tema-horus .topo {
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .tema-horus .primarca-image {
+        width: 250px;
+        max-width: none;
+    }
+
+    .tema-horus .resumo p {
+        font-size: 1.6rem;
+    }
+
+    .tema-horus .nav {
+        justify-content: space-between;
+        padding: 20px;
+        flex-wrap: nowrap;
+    }
+}
+
