@@ -93,6 +93,8 @@
 
 .tema-magnus .nav {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
     gap: 12px;
     padding: 16px 0;
     color: gold;
@@ -105,18 +107,13 @@
 /* olho */
 
 .tema-magnus .olho {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    
+    position: relative;
     width: 200px;
     height: 200px;
     border-radius: 50%;
 
     display: flex;
     align-items: center;
-    justify-content: center;
 
     /* glow externo */
     box-shadow: 0 0 60px rgba(150, 0, 255, 0.6); 
@@ -138,8 +135,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-
-    animation: pulsa 2s ease-in-out infinite alternate;
 }
 
 
@@ -149,10 +144,10 @@
     position: absolute;
     width: 200px;
     height: 200px;
-
-    animation: pulsa 3s linear;
 }
 
+/*Caso precise (pulsar do olho) 
+animation: pulsa 2s ease-in-out infinite alternate;*/
 /* movimento do olho */
 @keyframes pulsa {
     0% {
@@ -168,7 +163,7 @@
         box-shadow: 0 0 40px rgba(150,0,255,0.5);
     }
 }
-
+/**/
 .tema-magnus .pupila {
     width: 40px;
     height: 40px;
