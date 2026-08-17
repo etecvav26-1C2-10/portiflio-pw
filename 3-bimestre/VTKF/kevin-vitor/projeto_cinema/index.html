@@ -1,61 +1,335 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="description" content="Site sobre filmes atuais, antigos e antiguados, nosso site tras a promissa de trazer filmes para todos os tipos de cinefólos">
-    <title>Treg</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="x/icon" href="cata.png">
-</head>
-<body>
-<header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Programação de filmes em cartaz de cinema com horários e sessões."
+    />
+    <title>Trex Cinema | Programação</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="cata.png" />
+  </head>
+  <body>
+    <header>
+      <div class="topbar">
+        <div class="brand">
+          <img src="cata.png" alt="Logo Trex Cinema" />
+          <div class="brand-text">
+            <span class="brand-name">Trex</span>
+            <span class="brand-sub">Cinemas</span>
+          </div>
+        </div>
 
-    <div class="logo">
+        <nav class="main-nav" aria-label="Navegação principal">
+          <a href="#">Programação</a>
+        </nav>
 
-    <img src="cata.png">
-    <h1>Trex</h1>
-    <h2>filmes</h2>
-    <h2>lista</h2>
-    <h2>filmes em exibição</h2>
-    <form action="/buscar" method="GET">
-        <label for="campo-pesquisa">Buscar:</label>
-        <input type="search" id="campo-pesquisa" name="q" placeholder="Digite o título do filme" required>
-        <button type="submit">Pesquisar</button>
-      </form>
-      
-</div>
+        <div class="search-box">
+          <label for="campo-pesquisa" class="sr-only">Buscar filme</label>
+          <input
+            id="campo-pesquisa"
+            type="search"
+            placeholder="Procure um filme"
+          />
+          <button type="button">Buscar</button>
+        </div>
+      </div>
+    </header>
 
+    <main class="container">
+      <h1 class="page-title">Programação <span>› Filmes em cartaz</span></h1>
 
-</header>
+      <h2>Programação de hoje</h2>
 
-<main>
-    <div class="frase"></div>
-    <h3>filmes para toda as idades estão aqui na Trex, trazemos filmes de qualidadde e em alta qualidade</h3>
-    <h4>trex traz a faciliidade em conforto para nossos clientes da melhor forma</h4>
-    <p><em>temos também nosso site na versão mobile</em></p>
-</div>
-    <h5>Filmes em Cartaz</h5>
+      <p class="disclaimer">
+        O Trex Cinemas se reserva o direito de alterar a programação sem aviso prévio.
+        A grade de filmes é atualizada semanalmente, sempre às quartas-feiras.
+      </p>
 
-    <div class="cartaz">
+      <section class="movies" aria-label="Lista de filmes em cartaz">
+        <article class="movie-card">
+          <div class="poster">
+            <img src="img/homem aranha.jpg" alt="Homem-Aranha: Um Novo Dia" />
+          </div>
+          <div class="movie-content">
+            <h2 class="movie-title">HOMEM-ARANHA: UM NOVO DIA</h2>
 
+            <div class="cinema-block">
+              <h3>Shopping Jaraguá Indaiatuba</h3>
+              <div class="session-row">
+                <span class="session-tag">2D · DUB</span>
+                <div class="times">
+                  <a href="#">14h50 / TC</a>
+                  <a href="#">16h20</a>
+                  <a href="#">18h00 / TC</a>
+                  <a href="#">19h40</a>
+                </div>
+              </div>
+              <div class="session-row">
+                <span class="session-tag">2D · LEG</span>
+                <div class="times">
+                  <a href="#">21h10 / TC</a>
+                </div>
+              </div>
+            </div>
 
-    <img src="../img/homem aranha.jpg">
-    <img src="../img/backrooms.jpg">
-    <img src="../img/casa.jpg">
-    <img src="../img/odissey.jpg">
-    <img src="../img/obeessao.jpg">
-    <img src="../img/toy story.jpg">
-    <img src="../img/minions.jpg">
-    <img src="../img/michael.jpg">
-    <img src="../img/jacob.jpg">
-    <img src="../img/authentic games.jpg">
-</div>
+            <div class="cinema-block">
+              <h3>Polo Shopping Indaiatuba</h3>
+              <div class="session-row">
+                <span class="session-tag">2D · DUB</span>
+                <div class="times">
+                  <a href="#">15h40 / LASER</a>
+                  <a href="#">16h40 / VIP</a>
+                  <a href="#">18h40 / TC</a>
+                  <a href="#">20h25</a>
+                  <a href="#">21h35 / LASER</a>
+                </div>
+              </div>
+              <div class="session-row">
+                <span class="session-tag">2D · LEG</span>
+                <div class="times">
+                  <a href="#">17h45 / TC</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
 
-</main>
+        <article class="movie-card">
+          <div class="poster">
+            <img src="img/backrooms.jpg" alt="Backrooms" />
+          </div>
+          <div class="movie-content">
+            <h2 class="movie-title">O FIM DA RUA</h2>
 
+            <div class="cinema-block">
+              <h3>Shopping Jaraguá Indaiatuba</h3>
+            </div>
 
-<footer>
-    <h3>sobre</h3>
-    <h3>contato</h3>
-    <p> © Trex copyright 2026</p>
-</footer>
+            <div class="cinema-block">
+              <h3>Polo Shopping Indaiatuba</h3>
+              <div class="session-row">
+                <span class="session-tag">2D · DUB</span>
+                <div class="times">
+                  <a href="#">16h10 / TC</a>
+                  <a href="#">22h00 / TC</a>
+                </div>
+              </div>
+              <div class="session-row">
+                <span class="session-tag">2D · LEG</span>
+                <div class="times">
+                  <a href="#">19h10 / LASER</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="movie-card">
+          <div class="poster">
+            <img src="img/minions.jpg" alt="Patrulha Canina: Uma Aventura Dino" />
+          </div>
+          <div class="movie-content">
+            <h2 class="movie-title">Minions e Monstros</h2>
+
+            <div class="cinema-block">
+              <h3>Shopping Jaraguá Indaiatuba</h3>
+            </div>
+
+            <div class="cinema-block">
+              <h3>Polo Shopping Indaiatuba</h3>
+              <div class="session-row">
+                <span class="session-tag">2D · DUB</span>
+                <div class="times">
+                  <a href="#">15h15 / TC</a>
+                  <a href="#">18h10</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="movie-card">
+          <div class="poster">
+            <img src="img/casa.jpg" alt="A Morte de Robin Hood" />
+          </div>
+          <div class="movie-content">
+            <h2 class="movie-title">A MORTE DE ROBIN HOOD</h2>
+
+            <div class="cinema-block">
+              <h3>Shopping Jaraguá Indaiatuba</h3>
+              <div class="session-row">
+                <span class="session-tag">2D · DUB</span>
+                <div class="times">
+                  <a href="#">20h45 / TC</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="movie-card">
+          <div class="poster">
+            <img src="img/odissey.jpg" alt="Colegas e o Herdeiro" />
+          </div>
+          <div class="movie-content">
+            <h2 class="movie-title">COLEGAS E O HERDEIRO</h2>
+
+            <div class="cinema-block">
+              <h3>Shopping Jaraguá Indaiatuba</h3>
+              <div class="session-row">
+                <span class="session-tag">2D · DUB</span>
+                <div class="times">
+                  <a href="#">18h30 / TC</a>
+                  <a href="#">21h45</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <div class="day-group">
+          <h2 class="day-title">Terça-feira</h2>
+          <article class="movie-card">
+            <div class="poster">
+              <img src="img/Branquelas.jpg" alt="As Branquelas" />
+            </div>
+            <div class="movie-content">
+              <h2 class="movie-title">AS BRANQUELAS</h2>
+              <div class="cinema-block">
+                <h3>Shopping Jaraguá Indaiatuba</h3>
+                <div class="session-row">
+                  <span class="session-tag">2D · DUB</span>
+                  <div class="times">
+                    <a href="#">15h10</a>
+                    <a href="#">17h40</a>
+                    <a href="#">20h20</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="day-group">
+          <h2 class="day-title">Quarta-feira</h2>
+          <article class="movie-card">
+            <div class="poster">
+              <img src="img/Exterminator.jpg" alt="O Exterminador" />
+            </div>
+            <div class="movie-content">
+              <h2 class="movie-title">O EXTERMINADOR</h2>
+              <div class="cinema-block">
+                <h3>Polo Shopping Indaiatuba</h3>
+                <div class="session-row">
+                  <span class="session-tag">2D · LEG</span>
+                  <div class="times">
+                    <a href="#">16h00</a>
+                    <a href="#">18h30</a>
+                    <a href="#">21h15</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="day-group">
+          <h2 class="day-title">Quinta-feira</h2>
+          <article class="movie-card">
+            <div class="poster">
+              <img src="img/Rambo.jpg" alt="Rambo" />
+            </div>
+            <div class="movie-content">
+              <h2 class="movie-title">RAMBO: ULTIMA RETALIAÇÃO</h2>
+              <div class="cinema-block">
+                <h3>Shopping Jaraguá Indaiatuba</h3>
+                <div class="session-row">
+                  <span class="session-tag">2D · DUB</span>
+                  <div class="times">
+                    <a href="#">14h30</a>
+                    <a href="#">17h00</a>
+                    <a href="#">19h50</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="day-group">
+          <h2 class="day-title">Sexta-feira</h2>
+          <article class="movie-card">
+            <div class="poster">
+              <img src="img/jacob.jpg" alt="Jacob" />
+            </div>
+            <div class="movie-content">
+              <h2 class="movie-title">JACOB</h2>
+              <div class="cinema-block">
+                <h3>Polo Shopping Indaiatuba</h3>
+                <div class="session-row">
+                  <span class="session-tag">2D · DUB</span>
+                  <div class="times">
+                    <a href="#">15h40</a>
+                    <a href="#">18h20</a>
+                    <a href="#">21h40</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="day-group">
+          <h2 class="day-title">Sábado</h2>
+          <article class="movie-card">
+            <div class="poster">
+              <img src="img/michael.jpg" alt="Michael" />
+            </div>
+            <div class="movie-content">
+              <h2 class="movie-title">MICHAEL</h2>
+              <div class="cinema-block">
+                <h3>Shopping Jaraguá Indaiatuba</h3>
+                <div class="session-row">
+                  <span class="session-tag">2D · DUB</span>
+                  <div class="times">
+                    <a href="#">13h50</a>
+                    <a href="#">16h40</a>
+                    <a href="#">19h10</a>
+                    <a href="#">21h50</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="day-group">
+          <h2 class="day-title">Domingo</h2>
+          <article class="movie-card">
+            <div class="poster">
+              <img src="img/toy story.jpg" alt="Toy Story" />
+            </div>
+            <div class="movie-content">
+              <h2 class="movie-title">TOY STORY: O MUNDO DOS BRINQUEDOS</h2>
+              <div class="cinema-block">
+                <h3>Shopping Jaraguá Indaiatuba</h3>
+                <div class="session-row">
+                  <span class="session-tag">2D · DUB</span>
+                  <div class="times">
+                    <a href="#">14h00</a>
+                    <a href="#">16h30</a>
+                    <a href="#">19h00</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
+
