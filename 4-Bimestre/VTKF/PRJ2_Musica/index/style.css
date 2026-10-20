@@ -1,37 +1,44 @@
 .boxes .box1{
     background-image: url('../fotos/restinpeace.jfif');
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center;
     width: 100%;
     height: 700px;
-    background-repeat: no-repeat;
 }
 
 .boxes .box2{
     background-image: url('../fotos/BonnieBlue.webp');
+    background-repeat:no-repeat;
+    background-size: cover;
     width: 100%;
     height: 700px;
-    background-repeat: no-repeat;
 }
 
 .boxes .box3{
     background-image: url('../fotos/canetazul.jfif');
+    background-repeat:no-repeat;
+    background-size: cover;
     width: 100%;
     height: 700px;
-    background-repeat: no-repeat;
 }
 
 .boxes .box4{
     background-image: url('../fotos/LordPunheteiro.jfif');
+    background-repeat:no-repeat;
+    background-size: cover;
     width: 100%;
     height: 700px;
-    background-repeat: no-repeat;
 }
 
 .boxes .box5{
-    background-image: url('../fotos/locapaluzza.jfif');
+    background-image: url('../fotos/show.jfif');
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: bottom;
     width: 100%;
     height: 700px;
-    background-repeat: no-repeat;
-}
+}    
 
 .boxes h3{
     font-size: 70px;
